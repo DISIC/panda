@@ -2,16 +2,20 @@
 
 Intro : reprendre la différence opendata vs données confidentielles
 
-### Découvrir l'offre de données particuliers
+### Découvrir l'offre en matière de données liées aux particuliers
 
-#### données particulier
-Présentation de l'API
-Inscription à la lettre d'info
+#### Les données particulier
+
+une courte présentation de l'API existante
+
+proposition d'inscription à la lettre d'info api
+
 ##### Cas d'usage
+
 ###### Cas d'usage 1  
 - Définition du scope autorisé
 - un verbatim ? (on fait une rubrique particuliere pour les retours d'expérience ?)
-- Lien vers prestats
+- Lien vers prestataires qui couvrent ce CU
 -  
 ###### Cas d'usage 2
 - Définition du scope autorisé
@@ -21,12 +25,13 @@ Inscription à la lettre d'info
 ##### Données délivrées
 ###### Données impots
 ###### Données Caf
-##### Effectuer une demande d'accès
-Les élements génriques demandés Pour les API de la DINSIC
+##### Comment effectuer une demande d'accès
+Les élements génériques demandés pour les API de la DINSIC
 le fonctionnement détaillé selon l'API
-Plus tard : demande d'API franceConnecter : expliquer le processus.
+Plus tard : demande d'API "franceConnectées" : des api qui necessitent d'avoir implémenter le "bouton franceconnect". expliquer le processus.
 
 Renvoyer sur d'autres processus d'enrolement pour les API hors DINSIC (demander l'intervention d'autres ministeres - INSEE association...)
+
 #### API DGFIP FC
 #### FranceConnect : API de données d'identité
     - Données délivrées
