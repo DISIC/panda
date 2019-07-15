@@ -1,14 +1,23 @@
 ## Offre de service consommateur des données
 
-Intro : reprendre la différence opendata vs données confidentielles
+Dans le cadre de la mise en oeuvre de ses missions de service public, l’administration produit et reçoit des documents administratifs. L’open data consiste à mettre à disposition les données contenues dans ces documents administratifs à l’ensemble des citoyens afin que ces derniers puissent les réutiliser librement.
+
+Ces données sont exposées sur la plateforme https://www.data.gouv.fr/ dans laquelle figure notamment les données issues du [Service Public de la donnée](https://www.data.gouv.fr/fr/reference), créé par l’Article 14 de la loi pour une République numérique qui vise à mettre à disposition, en vue de faciliter leur réutilisation, les jeux de données de référence qui présentent le plus fort impact économique et social. Il s’adresse principalement aux entreprises et aux administrations pour qui la disponibilité d’une donnée de qualité est critique. Les producteurs et les diffuseurs prennent des engagements auprès de ces utilisateurs.
+
+D'autres données qu'elles concernent les particuliers ou les personnes morales sont confidentielles et ne sont délivrées qu'aux administrations légitimes. 
+
+L'accès à ces données et nécessite une autorisation qui est  étudiée au regard de la réglementation en vigueur.
 
 ### Découvrir l'offre en matière de données liées aux particuliers
 
 #### Les données particulier
 
-une courte présentation de l'API existante
+API Particulier, vise à permettre, par l’échange d’informations entre administrations, de Simplifier l’accomplissement des démarches administratives du public , lui évitant ainsi de fournir des informations ou pièces justificatives déjà détenues par une administration.
+* une démarche 100 % dématérialisée pour l'usager
+* une large catalogue de données disponibles
+* des informations certifiées à la source
 
-proposition d'inscription à la lettre d'info api
+Pour plus d'information, merci de nous écrire à l'adresse suivante: contact@particulier.api.gouv.fr 
 
 ##### Cas d'usage
 
