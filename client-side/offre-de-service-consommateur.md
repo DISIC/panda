@@ -1,6 +1,6 @@
 ## Offre de service consommateur des données
 
-Dans le cadre de la mise en oeuvre de ses missions de service public, l’administration produit et reçoit des documents administratifs. L’open data consiste à mettre à disposition les données contenues dans ces documents administratifs à l’ensemble des citoyens afin que ces derniers puissent les réutiliser librement.
+Dans le cadre de la mise en oeuvre de ses missions de service public, l’administration produit et reçoit des documents administratifs. L’open data consiste à mettre à disposition les données contenues dans ces documents administratifs à tous afin de les réutiliser librement.
 
 Ces données sont exposées sur la plateforme https://www.data.gouv.fr/ dans laquelle figure notamment les données issues du [Service Public de la donnée](https://www.data.gouv.fr/fr/reference), créé par l’Article 14 de la loi pour une République numérique qui vise à mettre à disposition, en vue de faciliter leur réutilisation, les jeux de données de référence qui présentent le plus fort impact économique et social. Il s’adresse principalement aux entreprises et aux administrations pour qui la disponibilité d’une donnée de qualité est critique. Les producteurs et les diffuseurs prennent des engagements auprès de ces utilisateurs.
 
@@ -8,9 +8,23 @@ D'autres données qu'elles concernent les particuliers ou les personnes morales 
 
 L'accès à ces données nécessite une autorisation qui est  étudiée au regard de la réglementation en vigueur, notamment via Signup (décrit plus bas).
 
-Par ailleurs, api.gouv.fr permet d'avoir accès à l'ensemble des APIs proposées par les administrations => introduire API.gouv.fr 
+Par ailleurs, api.gouv.fr permet d'avoir accès à l'ensemble des APIs proposées par les administration pour en faciliter leur exploitation. Ce catalogue d'APIs, facilite le décloisonnement des données détenues par l’administration, afin de dynamiser le développement et l’évolution rapide de nouveaux services publics. Des services développés par les administrations et par tous les innovateurs susceptibles d’utiliser cette nouvelle ressource. 
 
-L'un des objectifs de la DINSIC est de construire un catalogue de ces données afin d'en faciliter les usages.
+Les administrations déclarent elles-mêmes leurs APIs, pour peu qu’elles respectent un ensemble simple de conditions :
+
+- disposer d’une description fonctionnelle claire et succincte de l'API à renseigner sur API.GOUV,
+- proposer une documentation technique en ligne et claire,
+- décrire une procédure en ligne pour demander l'accès à l'API si elle n'est pas totalement ouverte.
+
+Principal critère d'acceptation de l’API : celle-ci doit pouvoir être testée en moins d'une journée et intégrée en moins d'une semaine.
+
+Au delà des conditions exposées ci dessus, api.gouv.fr encourage un ensemble de bonnes pratiques. Comme celle de produire une documentation au format OPEN API, de fournir des exemples de services utilisant leurs API ou encore de proposer une page de statistiques démontrant la facilité d'utilisation pour l'API concernée : nombre de hits, mais surtout mesures sectorielles comme nombre de courses de taxi (le.taxi), nombre de candidatures simplifiées aux marchés publics (API Entreprise).
+
+Les producteur d’API sont également invités à décrire simplement les modalités d'accès à leur API (CGU, licence..) et à simplifier au maximum l'enrôlement.
+
+Les fournisseurs d’API sont responsables de l’exposition de leurs ressources. Ils définissent les conditions d’utilisation que devront respecter les consommateurs d’API. Les fournisseurs d’API référencés sur api.gouv.fr sont tous issus de la sphère publique : l’État ou ses représentants, collectivités, autorités administratives…
+
+Les consommateurs d’API quant à eux prennent contact avec les fournisseurs pour consommer leurs ressources. Les consommateurs sont issus de la sphère publique ou de la sphère privée (associations, startup, éditeurs, entreprises, etc.). Dans le cas des API ouvertes, sans conditions, il n’est pas nécessaire de contacter le fournisseur avant de consommer les ressources.
 
 ### Découvrir l'offre en matière de données liées aux particuliers
 
