@@ -72,7 +72,7 @@ Il sera demandé au fournisseur de service les informations suivantes :
 **Le formulaire proposé est un socle minimal et peut être adapté aux besoins spécifiques de chaque ministère.**
 
 ### Catalogue de données
-#### API Part
+#### API Particulier
 
 **Informations issues de la Direction Générales des Finances Publiques (DGFIP):**
 
