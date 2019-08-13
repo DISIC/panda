@@ -135,10 +135,9 @@ Il sera demandé au fournisseur de service les informations suivantes :
 Ce catalogue d'APIs, facilite le décloisonnement des données détenues par l’administration, afin de dynamiser le développement et l’évolution rapide de nouveaux services publics. Des services développés par les administrations et par tous les innovateurs susceptibles d’utiliser cette nouvelle ressource.
 
 Les administrations déclarent elles-mêmes leurs APIs, pour peu qu’elles respectent un ensemble simple de conditions :
-
-    disposer d’une description fonctionnelle claire et succincte de l'API à renseigner sur API.GOUV,
-    proposer une documentation technique en ligne et claire,
-    décrire une procédure en ligne pour demander l'accès à l'API si elle n'est pas totalement ouverte.
+* disposer d’une description fonctionnelle claire et succincte de l'API à renseigner sur API.GOUV,
+* proposer une documentation technique en ligne et claire,
+* décrire une procédure en ligne pour demander l'accès à l'API si elle n'est pas totalement ouverte.
 
 Principal critère d'acceptation de l’API : celle-ci doit pouvoir être testée en moins d'une journée et intégrée en moins d'une semaine.
 
@@ -149,7 +148,6 @@ Les producteur d’API sont également invités à décrire simplement les modal
 Les fournisseurs d’API sont responsables de l’exposition de leurs ressources. Ils définissent les conditions d’utilisation que devront respecter les consommateurs d’API. Les fournisseurs d’API référencés sur api.gouv.fr sont tous issus de la sphère publique : l’État ou ses représentants, collectivités, autorités administratives…
 
 Les consommateurs d’API quant à eux prennent contact avec les fournisseurs pour consommer leurs ressources. Les consommateurs sont issus de la sphère publique ou de la sphère privée (associations, startup, éditeurs, entreprises, etc.). Dans le cas des API ouvertes, sans conditions, il n’est pas nécessaire de contacter le fournisseur avant de consommer les ressources.
-
 ### Accompagnement à la mise à disposition des données
 #### Construire une API
 
