@@ -45,6 +45,8 @@ Si vous souhaitez utiliser API Particulier dans votre ministère, votre mairie, 
 
 Vos développeurs auront accès à la [documentation technique](https://api.gouv.fr/api/api-particulier.html#doc_tech) : à quelles informations ils peuvent avoir accès, ainsi que des données de test. 
 
+Les équipes de la DINSIC se tiennent à votre disposition pour vous accompagner dans vos démarches.
+
 **Les données actuellement disponibles à travers l'API Particulier sont les suivantes:**
 
 *Informations issues de la Direction Générales des Finances Publiques (DGFIP):*
@@ -91,7 +93,7 @@ Depuis 2017, les habitants de Clamart (92) qui utilisent le Portail Famille pour
 ###### Données Caf
 ##### Comment effectuer une demande d'accès
 
-La DINSIC met en œuvre un outil interministériel centralisé de contractualisation entre fournisseurs de services et de données
+La DINSIC met en œuvre un outil interministériel centralisé de contractualisation entre fournisseurs de services et de données (Signup)
 
 **Pour les fournisseurs de service :** 
 * Gère les demande d’accès à plusieurs API
@@ -118,8 +120,20 @@ Le fournisseur de service (FS) doit demander une autorisation pour pouvoir être
 
 **Le formulaire proposé est un socle minimal et peut être adapté aux besoins spécifiques de chaque ministère.**
 
+###### Vers des APIs France Connectées
 
-Plus tard : demande d'API "franceConnectées" : des api qui necessitent d'avoir implémenter le "bouton franceconnect". expliquer le processus.
+Les API sont utilisables par les administrations dans le cadre d’un service en ligne à destination des particuliers selon deux méthodes correspondant à des besoins différents :
+
+* Dans le parcours du service en ligne, il est demandé à l’usager de fournir des informations spécifiques utilisées pour obtenir les informations délivrées par l’API (ex : numéro caf et département pour obtenir le quotient familial). Ce type d’usage peut permettre de solliciter l’API en back office indépendamment du service en ligne.
+* Le service en ligne est adossé à FranceConnect particulier. En se connectant avec FranceConnect, les données d’identité sont utilisées pour obtenir les informations délivrées par l’API et transmises au service traitant
+
+L'objectif à terme est d'étendre l'utilisation d'APIs France Connectées afin de:
+* disposer d'un moyen d'identification unique pour un nombre croissant d'APIs
+* assurer la cohérence et la fluidité du parcours utilisateur
+* garantir l'identité de manière simple
+* gérer de manière efficace et rapide le consentement (France Connect est tiers de confiance).
+
+###### Les processus d'enrolement existants
 
 Renvoyer sur d'autres processus d'enrolement pour les API hors DINSIC (demander l'intervention d'autres ministeres - INSEE association...)
 
@@ -132,7 +146,10 @@ Renvoyer sur d'autres processus d'enrolement pour les API hors DINSIC (demander 
 
 
 #### Demander une donnée manquante au catalogue
-Formulaire de demande d'accès à une donnée qui n'existe pas au catalogue :
+
+Vous souhaitez exploiter des données qui ne sont pas référencées dans notre catalogue ?
+Remplissez le formulaire ci-dessous afin de nous aider à l'enrichir:
+
 Champs du formulaire
 - Organnisation
 - Mail
@@ -142,9 +159,32 @@ Champs du formulaire
 
 ### Découvrir l'offre de données "personne morale"
 
+Le service public de la donnée créé par l’Article 14 de la loi pour une République numérique vise à mettre à disposition, en vue de faciliter leur réutilisation, les jeux de données de référence qui présentent le plus fort impact économique et social. Il s’adresse principalement aux entreprises et aux administrations pour qui la disponibilité d’une donnée de qualité est critique. Les producteurs et les diffuseurs prennent des engagements auprès de ces utilisateurs.
 
-Introduction avec open data (liste des API opendata personne morale ?) et les données délivrées dans ce cadre puis présentation de l'API entreprise!^!
+Parmis les neuf jeux de données de référence mis à disposition dans le cadre du service public de la données figurent deux bases de données relatives aux personnes morales que vous pourrez réutiliser gratuitement dans un format réutilisable: 
+* la base SIRENE des entreprises et de leurs établissements (SIREN, SIRET)
+* le répertoire national des associations contenant l’ensemble des associations relevant de la loi 1901, à savoir toutes les associations de France, dont le siège est déclaré en métropole ou dans les départements d’outre-mer, sauf dans les départements de la Moselle, du Bas-Rhin et du Haut-Rhin, qui relèvent du régime du Concordat. Le RNA contient également les associations reconnues d’utilité publique (dites "ARUP").
+
+Il existe d'autres données relatives aux personnes morales non éligibles à l'open data car protégées par des secrets légaux, qui peuvent toutefois être réutilisées par des administrations ayant droit d'en connaitre dans le cadre de leur mission de service public.
+
+La DINSIC propose ces données à travers entreprise.api.gouv.fr.
+
 #### API entreprise
+
+API entreprise est un agrégateur de différents services de l’état, permettant de recouper et regrouper des informations vis-à-vis d’entités existantes (actuellement seulement les entreprises et établissements français).
+
+Certaines ressources nécessitent plus de paramètres vis à vis de l’authentification, ( tel que la récupération des attestations fiscales ), paramètres utilisés lors de l’appel à un autre service tier nécessitant des informations plus précise sur l’origine de l’appel API.
+
+La demande de connexion à l'API Entreprise est possible pour tout opérateur public qui souhaite opérer pour son compte, ou faire opérer par un éditeur privé, un service de dématérialisation ou de simplification administratives qui nécessite la mise en relation avec des fournisseurs d'informations publiques. 
+
+Vous voulez évaluer les possibilités de l'API Entreprise ou commencer à vous interfacer ? La documentation technique est faite pour vous. Vous y trouverez les informations techniques génériques, ainsi que le détail de chaque endpoint.
+
+https://doc.entreprise.api.gouv.fr/#introduction
+
+Il est important de connaître la santé de nos dispositifs. Notre tableau de bord comporte les disponibilités historisées sur 7 jours, les disponibilités en temps réel ainsi que la liste des incidents. Ces fonctionnalités sont amenées à s'enrichir et à évoluer en fonction des retours et besoins remontés par les clients de l'API Entreprise. 
+
+https://dashboard.entreprise.api.gouv.fr/ 
+
 ##### Cas d'usage
 ###### Cas d'usage 1  : marchés publics  
 - Définition du scope autorisé
@@ -157,7 +197,6 @@ Introduction avec open data (liste des API opendata personne morale ?) et les do
 - Liste des prestataires qui couvrent ce cas d'usage + mail de contact pour figurer dans la liste
 
 ###### Autres cas d'usage
-
 
 ##### Catalogue des données de l'API entreprise
 - Association
@@ -180,14 +219,53 @@ Introduction avec open data (liste des API opendata personne morale ?) et les do
 - Certificat Qualibat
 
 ##### Effectuer une demande d'accès
-Les éléments génériques demandés Pour les API de la DINSIC
-le fonctionnement détaillé selon l'API
-Plus tard : demande d'API franceConnecter : expliquer le processus.
+
+Le fournisseutr de service sera invité à demander une autorisation pour pouvoir être destinataire de données via les APIs. In fine, il sera destinataire de la clef de sécurité (token) utilisée dans le service en ligne ou le backoffice. Cette démarche, validée par l’ANSSI est dématérialisée à travers une interface (signup)
+
+**Il sera demandé au fournisseur de service les informations suivantes :**
+* L’intitulé du service en ligne et l’utilisation faite des données
+* L’identité de son organisation : pré-remplissage des données sur fourniture du SIRET (via une API)
+* 3 contacts: 
+  * Le délégué à la protection des données personnelles préalablement informé de la démarche
+  * Le responsable du traitement, responsable métier du service en ligne 
+  * Le responsable technique, destinataire de la clef de sécurité
+* Le cadre juridique qui justifie du droit d'en connaitre de l'administration: il s’agit d’indiquer le cadre légal et réglementaire qui légitime l’administration à collecter les informations demandées. En complément, les collectivités peuvent aussi fournir une délibération.
+* Sélection des données demandées: 
+  * Un fournisseur de service peut dans le cadre d’une démarche demander l’accès à des API de plusieurs ministères
+  * Pour une même API un fournisseur de données peut proposer d’accéder à des données différentes que l’on qualifie « grappe de données » et qui techniquement sont regroupées sous le vocable de scope
+* Validation des modalités d'utilisation
+
+**Le formulaire proposé est un socle minimal et peut être adapté aux besoins spécifiques de chaque ministère.**
+
+###### Vers des APIs France Connectées
+
+Les API sont utilisables par les administrations dans le cadre d’un service en ligne à destination des particuliers selon deux méthodes correspondant à des besoins différents :
+
+* Dans le parcours du service en ligne, il est demandé à l’usager de fournir des informations spécifiques utilisées pour obtenir les informations délivrées par l’API (ex : numéro caf et département pour obtenir le quotient familial). Ce type d’usage peut permettre de solliciter l’API en back office indépendamment du service en ligne.
+* Le service en ligne est adossé à FranceConnect particulier. En se connectant avec FranceConnect, les données d’identité sont utilisées pour obtenir les informations délivrées par l’API et transmises au service traitant
+
+L'objectif à terme est d'étendre l'utilisation d'APIs France Connectées afin de:
+* disposer d'un moyen d'identification unique pour un nombre croissant d'APIs
+* assurer la cohérence et la fluidité du parcours utilisateur
+* garantir l'identité de manière simple
+* gérer de manière efficace et rapide le consentement (France Connect est tiers de confiance).
+
+###### Les processus d'enrolement existants
 
 Renvoyer sur d'autres processus d'enrolement pour les API hors DINSIC (demander l'intervention d'autres ministeres - INSEE association...)
 
+
 #### Demander une donnée manquante au catalogue des données personnes morales
 
+Vous souhaitez exploiter des données qui ne sont pas référencées dans notre catalogue ?
+Remplissez le formulaire ci-dessous afin de nous aider à l'enrichir:
+
+Champs du formulaire
+- Organnisation
+- Mail
+- cas d'usage
+- justification juridique
+- données demandées
 
 #### APIs PISTE ?
 #### APIs agriculture ?
