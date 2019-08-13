@@ -22,25 +22,145 @@ Vous êtes une administrations de l’Etat, une collectivité territoriale, un �
 La DINSIC vous met à disposition ses outils et son expertise afin de vous accompagner dans la fluidification de la circulation des données au service du pilotage de vos politiques publiques !
 
 ## Consommateur de données
+
 ### Exemple de démarche
 
+#### Demande de bourse des collèges
+
+En 2018, toutes les demandes des bourses au collège ont été dématérialisées grâce à API Particulier. Les revenus de la famille ont été directement récupérés au niveau des centres des impôts. En septembre 2018, nous avons eu 650 000 appels réussis ce qui correspond à autant de justificatifs qui onnt été évités. C’est à nouveau un gain de temps pour les familles. Certains parents devaient prendre une demi journée de RTT pour déposer leur dossier, d’autres demander à leurs enfants de faire la queue pendant la récréation….
+
+#### Incription aux activités périscolaires de la ville de la Lyon
+
+Le quotient familial municipal sert à obtenir des réducations sur le prix des repas de la cantine scolaire dans les écoles publiques ou privées, sur les tarifs des activités périscolaires (les accueils du soir) et extrascolaires (ateliers du mercredi). Il est déterminé en fonction des revenus et de la composition de la famille.
+
+
 ### Signup
+
+La DINSIC met en œuvre un outil interministériel centralisé de contractualisation entre fournisseurs de services et de données (Signup)
+
+**Pour les fournisseurs de service :**
+
+* Gère les demande d’accès à plusieurs API
+* Permet de sélectionner les périmètres de données (scope) dans chaque API
+* Permet à plusieurs comptes d’accéder aux abonnements
+* Permet de gérer le renouvellement des autorisations (tokens) avec un seul compte
+* Donne accès à l’ensemble des contrats d’une organisation
+* Gère les demandes de tokens vers des api manager des ministères
+
+Le fournisseur de service (FS) doit demander une autorisation pour pouvoir être destinataire de données via les APIs. In fine, il sera destinataire de la clef de sécurité (token) utilisée dans le service en ligne ou le backoffice. Cette démarche, validée par l’ANSSI est dématérialisée à travers une interface (signup)
+
+Il sera demandé au fournisseur de service les informations suivantes :
+
+* L’intitulé du service en ligne et l’utilisation faite des données
+* L’identité de son organisation : pré-remplissage des données sur fourniture du SIRET (via une API)
+* 3 contacts:
+  * Le délégué à la protection des données personnelles préalablement informé de la démarche
+  * Le responsable du traitement, responsable métier du service en ligne
+  * Le responsable technique, destinataire de la clef de sécurité
+* Le cadre juridique qui justifie du droit d'en connaitre de l'administration: il s’agit d’indiquer le cadre légal et réglementaire qui légitime l’administration à collecter les informations demandées. En complément, les collectivités peuvent aussi fournir une délibération.
+* Sélection des données demandées:
+  * Un fournisseur de service peut dans le cadre d’une démarche demander l’accès à des API de plusieurs ministères
+  * Pour une même API un fournisseur de données peut proposer d’accéder à des données différentes que l’on qualifie « grappe de données » et qui techniquement sont regroupées sous le vocable de scope
+* Validation des modalités d'utilisation
+
+**Pour les fournisseurs de données :**
+
+* Instruction juridique et technique des demandes d’accès aux API pour le compte des ministères. 
+* Automatisation de la délivrance des tokens grâce par interaction avec l’API management des ministères
+* Contrôle à chaque appel de la validité du contrat
+
+**Le formulaire proposé est un socle minimal et peut être adapté aux besoins spécifiques de chaque ministère.**
 
 ### Catalogue de données
 #### API Part
+
+**Informations issues de la Direction Générales des Finances Publiques (DGFIP):**
+
+* Déclarants du foyer fiscal - Le foyer fiscal se compose du contribuable lui-même, du conjoint ou partenaire de Pacs
+* Adresse connue au 1er janvier de l’année d’imposition (exemple au 1er janvier 2018 pour les revenus de 2017)
+* Nombre de parts
+* Revenu fiscal de référence
+* Nombre de personnes à charge
+* Situation familiale
+* Montant des impots
+* Revenu net avant correction
+* Revenu imposable
+* Revenu brut global
+* Date de mise en recouvrement de l’avis d’impôt
+* Date d’établissement
+
+**Information issues de la Caisse Nationale d'Assurance Familiale:**
+
+* Liste des allocataires
+* Liste des enfants
+* Adresse au format de la Poste
+* Valeur du quotient familial
+* Année et mois du quotient familial
+
 #### API Entreprise
+
+* Association
+* Document association
+* INSEE Entreprise
+* INSEE Etablissement
+* Bilans Entreprises BDF
+* Exercice
+* Extrait INPI
+* Extrait RCS
+* Liasse fiscale
+* Attestation Fiscale
+* Attestation Sociale
+* Attestation AGEFIPH
+* Cotisation MSA
+* Carte Pro FNTP
+* Certificat CNETP
+* Certificat OPQIBI
+* Certificat PROBTP
+* Certificat Qualibat
+
 #### API France Connectées
+
+* API Impôts Particuliers
+* API SIV (Système d'immatriculation des véhicules)
+* API France Connect
+* API CNAM
+* API Justif'Adresse
+
 ### Partenaires
 
 ## Producteur de données
+
 ### Faire connaitre son API publier mon api sur api.gouv.fr
+
+Ce catalogue d'APIs, facilite le décloisonnement des données détenues par l’administration, afin de dynamiser le développement et l’évolution rapide de nouveaux services publics. Des services développés par les administrations et par tous les innovateurs susceptibles d’utiliser cette nouvelle ressource.
+
+Les administrations déclarent elles-mêmes leurs APIs, pour peu qu’elles respectent un ensemble simple de conditions :
+
+    disposer d’une description fonctionnelle claire et succincte de l'API à renseigner sur API.GOUV,
+    proposer une documentation technique en ligne et claire,
+    décrire une procédure en ligne pour demander l'accès à l'API si elle n'est pas totalement ouverte.
+
+Principal critère d'acceptation de l’API : celle-ci doit pouvoir être testée en moins d'une journée et intégrée en moins d'une semaine.
+
+Au delà des conditions exposées ci dessus, api.gouv.fr encourage un ensemble de bonnes pratiques. Comme celle de produire une documentation au format OPEN API, de fournir des exemples de services utilisant leurs API ou encore de proposer une page de statistiques démontrant la facilité d'utilisation pour l'API concernée : nombre de hits, mais surtout mesures sectorielles comme le nombre de candidatures simplifiées aux marchés publics (API Entreprise).
+
+Les producteur d’API sont également invités à décrire simplement les modalités d'accès à leur API (CGU, licence..) et à simplifier au maximum l'enrôlement.
+
+Les fournisseurs d’API sont responsables de l’exposition de leurs ressources. Ils définissent les conditions d’utilisation que devront respecter les consommateurs d’API. Les fournisseurs d’API référencés sur api.gouv.fr sont tous issus de la sphère publique : l’État ou ses représentants, collectivités, autorités administratives…
+
+Les consommateurs d’API quant à eux prennent contact avec les fournisseurs pour consommer leurs ressources. Les consommateurs sont issus de la sphère publique ou de la sphère privée (associations, startup, éditeurs, entreprises, etc.). Dans le cas des API ouvertes, sans conditions, il n’est pas nécessaire de contacter le fournisseur avant de consommer les ressources.
+
 ### Accompagnement à la mise à disposition des données
 #### Construire une API
+
 #### Intégrer une API dans un bouquet de service de la DINSIC
+
 #### APIm
+
 #### Je souhaite exposer les données m'ai ne dispose pas des moyens techniques
+
 ### Signup
-### 
+
 ## Base juridique
 
 Simplifier les formalités administratives des Français. C’est la promesse de la « loi pour un État au service d’une société de confiance » qui comporte 2 piliers : faire confiance et faire simple et s’adresse à tous les usagers - particuliers ou entreprises - dans leurs relations quotidiennes avec les administrations.
