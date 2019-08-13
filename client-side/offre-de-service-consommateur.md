@@ -84,9 +84,9 @@ Pour plus d'information, merci de nous écrire à l'adresse suivante: contact@pa
 
 En 2018, toutes les demandes des bourses au collège ont été dématérialisées grâce à API Particulier. Les revenus de la famille ont été directement récupérés au niveau des centres des impôts. En septembre 2018, nous avons eu 650 000 appels réussis ce qui correspond à autant de justificatifs qui onnt été évités. C’est à nouveau un gain de temps pour les familles. Certains parents devaient prendre une demi journée de RTT pour déposer leur dossier, d’autres demander à leurs enfants de faire la queue pendant la récréation….
   
-###### Cas d'usage 2: Incription aux activités périscolaires de la ville de la Clamart
+###### Cas d'usage 2: Incription aux activités périscolaires de la ville de Lyon
 
-Depuis 2017, les habitants de Clamart (92) qui utilisent le Portail Famille pour inscrire leurs enfants à des activités périscolaires n’ont plus à scanner leur fiche d’imposition. La commune dématérialise le calcul de leur quotient familial grâce à la donnée fournie par API Particulier.   
+Le quotient familial municipal sert à obtenir des réducations sur le prix des repas de la cantine scolaire dans les écoles publiques ou privées, sur les tarifs des activités périscolaires (les accueils du soir) et extrascolaires (ateliers du mercredi). Il est déterminé en fonction des revenus et de la composition de la famille.
 
 ##### Données délivrées
 ###### Données impots
