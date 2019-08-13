@@ -17,9 +17,9 @@ Pour organiser l’ensemble de ces échanges d’informations, les administratio
 
 ## Eligibilité
 
-Vous êtes une administrations de l’Etat, une collectivités territoriales, un établissement public administratif, un organisme ou une personne de droit public ou de droit privé chargé d’une mission de service public administratif (parmis lesquels figurent les organismes de sécurité sociale) ? 
+Vous êtes une administrations de l’Etat, une collectivité territoriale, un établissement public administratif, un organisme ou une personne de droit public ou de droit privé chargé d’une mission de service public administratif (parmis lesquels figurent les organismes de sécurité sociale) ? 
 
-La DINSIC vous met à disposition ses outils et son expertise afin de vous accompagner dans la fluidification de la circulation des données !
+La DINSIC vous met à disposition ses outils et son expertise afin de vous accompagner dans la fluidification de la circulation des données au service du pilotage de vos politiques publiques !
 
 ## Consommateur de données
 ### Exemple de démarche
