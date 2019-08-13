@@ -22,13 +22,14 @@ Les administrations déclarent elles-mêmes leurs APIs, pour peu qu’elles resp
 
 Principal critère d'acceptation de l’API : celle-ci doit pouvoir être testée en moins d'une journée et intégrée en moins d'une semaine.
 
-Au delà des conditions exposées ci dessus, api.gouv.fr encourage un ensemble de bonnes pratiques. Comme celle de produire une documentation au format OPEN API, de fournir des exemples de services utilisant leurs API ou encore de proposer une page de statistiques démontrant la facilité d'utilisation pour l'API concernée : nombre de hits, mais surtout mesures sectorielles comme nombre de courses de taxi (le.taxi), nombre de candidatures simplifiées aux marchés publics (API Entreprise).
+Au delà des conditions exposées ci dessus, api.gouv.fr encourage un ensemble de bonnes pratiques. Comme celle de produire une documentation au format OPEN API, de fournir des exemples de services utilisant leurs API ou encore de proposer une page de statistiques démontrant la facilité d'utilisation pour l'API concernée : nombre de hits, mais surtout mesures sectorielles comme le nombre de candidatures simplifiées aux marchés publics (API Entreprise).
 
 Les producteur d’API sont également invités à décrire simplement les modalités d'accès à leur API (CGU, licence..) et à simplifier au maximum l'enrôlement.
 
 Les fournisseurs d’API sont responsables de l’exposition de leurs ressources. Ils définissent les conditions d’utilisation que devront respecter les consommateurs d’API. Les fournisseurs d’API référencés sur api.gouv.fr sont tous issus de la sphère publique : l’État ou ses représentants, collectivités, autorités administratives…
 
 Les consommateurs d’API quant à eux prennent contact avec les fournisseurs pour consommer leurs ressources. Les consommateurs sont issus de la sphère publique ou de la sphère privée (associations, startup, éditeurs, entreprises, etc.). Dans le cas des API ouvertes, sans conditions, il n’est pas nécessaire de contacter le fournisseur avant de consommer les ressources.
+
 
 ### Découvrir l'offre en matière de données liées aux particuliers
 
@@ -79,19 +80,45 @@ Pour plus d'information, merci de nous écrire à l'adresse suivante: contact@pa
 
 ###### Cas d'usage 1 : Demande de bourse des collèges
 
-Cette année, toutes les demandes des bourses au collège ont été dématérialisées grâce à API Particulier. Les revenus de la famille ont été directement récupérés au niveau des centres des impôts. En septembre 2018, nous avons eu 650 000 appels réussis ce qui correspond à autant de justificatifs qui ont été évités. C’est à nouveau un gain de temps pour les familles. Certains parents devaient prendre une demi journée de RTT pour déposer leur dossier, d’autres demander à leurs enfants de faire la queue pendant la récréation….
+En 2018, toutes les demandes des bourses au collège ont été dématérialisées grâce à API Particulier. Les revenus de la famille ont été directement récupérés au niveau des centres des impôts. En septembre 2018, nous avons eu 650 000 appels réussis ce qui correspond à autant de justificatifs qui onnt été évités. C’est à nouveau un gain de temps pour les familles. Certains parents devaient prendre une demi journée de RTT pour déposer leur dossier, d’autres demander à leurs enfants de faire la queue pendant la récréation….
   
-###### Cas d'usage 2
-- Définition du scope autorisé
-- un verbatim ?
-- Liste des prestataires qui couvrent ce cas d'usage
+###### Cas d'usage 2: Incription aux activités périscolaires de la ville de la Clamart
+
+Depuis 2017, les habitants de Clamart (92) qui utilisent le Portail Famille pour inscrire leurs enfants à des activités périscolaires n’ont plus à scanner leur fiche d’imposition. La commune dématérialise le calcul de leur quotient familial grâce à la donnée fournie par API Particulier.   
 
 ##### Données délivrées
 ###### Données impots
 ###### Données Caf
 ##### Comment effectuer une demande d'accès
-Les élements génériques demandés pour les API de la DINSIC
-le fonctionnement détaillé selon l'API
+
+La DINSIC met en œuvre un outil interministériel centralisé de contractualisation entre fournisseurs de services et de données
+
+**Pour les fournisseurs de service :** 
+* Gère les demande d’accès à plusieurs API
+* Permet de sélectionner les périmètres de données (scope) dans chaque API
+* Permet à plusieurs comptes d’accéder aux abonnements
+* Permet de gérer le renouvellement des autorisations (tokens) avec un seul compte
+* Donne accès à l’ensemble des contrats d’une organisation
+* Gère les demandes de tokens vers des api manager des ministères
+
+Le fournisseur de service (FS) doit demander une autorisation pour pouvoir être destinataire de données via les APIs. In fine, il sera destinataire de la clef de sécurité (token) utilisée dans le service en ligne ou le backoffice. Cette démarche, validée par l’ANSSI est dématérialisée à travers une interface (signup)
+
+**Il sera demandé au fournisseur de service les informations suivantes :**
+* L’intitulé du service en ligne et l’utilisation faite des données
+* L’identité de son organisation : pré-remplissage des données sur fourniture du SIRET (via une API)
+* 3 contacts: 
+  * Le délégué à la protection des données personnelles préalablement informé de la démarche
+  * Le responsable du traitement, responsable métier du service en ligne 
+  * Le responsable technique, destinataire de la clef de sécurité
+* Le cadre juridique qui justifie du droit d'en connaitre de l'administration: il s’agit d’indiquer le cadre légal et réglementaire qui légitime l’administration à collecter les informations demandées. En complément, les collectivités peuvent aussi fournir une délibération.
+* Sélection des données demandées: 
+  * Un fournisseur de service peut dans le cadre d’une démarche demander l’accès à des API de plusieurs ministères
+  * Pour une même API un fournisseur de données peut proposer d’accéder à des données différentes que l’on qualifie « grappe de données » et qui techniquement sont regroupées sous le vocable de scope
+* Validation des modalités d'utilisation
+
+**Le formulaire proposé est un socle minimal et peut être adapté aux besoins spécifiques de chaque ministère.**
+
+
 Plus tard : demande d'API "franceConnectées" : des api qui necessitent d'avoir implémenter le "bouton franceconnect". expliquer le processus.
 
 Renvoyer sur d'autres processus d'enrolement pour les API hors DINSIC (demander l'intervention d'autres ministeres - INSEE association...)
@@ -114,6 +141,8 @@ Champs du formulaire
 - données demandées
 
 ### Découvrir l'offre de données "personne morale"
+
+
 Introduction avec open data (liste des API opendata personne morale ?) et les données délivrées dans ce cadre puis présentation de l'API entreprise!^!
 #### API entreprise
 ##### Cas d'usage
