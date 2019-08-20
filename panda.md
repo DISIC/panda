@@ -2,22 +2,22 @@
 
 ## Contexte
 
-La DINSIC a développé depuis plusieurs années des plateformes permettant de fluidifier la circulation des données qui est née de l’ouverture des données publiques. Dès 2011, les administrations ont commencé à publier des données publiques dans des formats librement réutilisables sur la plateforme www.data.gouv.fr afin de permettre à des tiers (public/ privé) de les exploiter.
+Née de l’ouverture des données publiques, dès 2011, les administrations ont commencé à publier des données publiques dans des formats librement réutilisables sur la plateforme www.data.gouv.fr afin de permettre à des tiers (public/ privé) de les exploiter. Depuis, la DINSIC a développé plusieurs plateformes permettant de fluidifier la circulation des données publiques et à accès restreint.
 
-Pensée initialement comme un vecteur de transparence, cette politique publique a notamment permis à de nombreuses administrations d’avoir accès aux données d’autres administrations. L’ouverture des données a ainsi été un catalyseur permettant une réelle prise de conscience quant à la nécessité de faire circuler les données.
+Pensée initialement comme un vecteur de transparence, l'ouverture des données publique, en tant que politique publique, a notamment permis à de nombreuses administrations d’avoir accès aux données d’autres administrations. L’ouverture des données a ainsi été un catalyseur permettant une réelle prise de conscience quant à la nécessité de faire circuler les données.
 
-D'autres données qu'elles concernent les particuliers ou les personnes morales sont confidentielles et ne sont délivrées qu'aux administrations légitimes.
+D'autres données ne sont pas des données publiques, elles sont confidentielles et peuvent concerner les particuliers ou les personnes morales. Ces donnés ne sont délivrées qu'aux administrations légitimes.
 
-L'accès à ces données nécessite une autorisation qui est étudiée au regard de la réglementation en vigueur.
-Dans le cadre de la mise en œuvre du programme Dites-le nous une fois piloté par la DINSIC, des plateformes et des outils ont été développé afin de simplifier les démarches administratives en agissant sur la suppression des pièces justificatives qui émanent des administrations.
+L'accès à ces données nécessite donc une autorisation qui est étudiée au regard de la réglementation en vigueur.
+Dans le cadre de la mise en œuvre du programme Dites-le nous une fois piloté par la DINSIC, des plateformes et des outils ont été développés afin de simplifier les démarches administratives en agissant sur la suppression des pièces justificatives qui émanent des administrations.
 
-L’administration sera tenue d’informer l’usager sur ces échanges en lui indiquant les informations qui lui sont nécessaires pour traiter sa démarche, les informations qu’elle se procure auprès d’autres administrations et d’assurer la traçabilité des échanges jusqu’à 36 mois suivant la démarche.
+L’administration sera tenue d’informer l’usager sur ces échanges en lui indiquant les informations qui lui sont nécessaires pour traiter sa démarche et les informations qu’elle se procure auprès d’autres administrations. L'administration doit également assurer la traçabilité des échanges jusqu’à 36 mois suivant la démarche.
 
-Pour organiser l’ensemble de ces échanges d’informations, les administrations pourront s’appuyer sur une offre de service et de produits, opérés par la DINSIC, qui permettront le développement d’échange d’informations entre administrations.
+**Pour organiser l’ensemble de ces échanges d’informations, les administrations pourront s’appuyer sur une offre de service et de produits, opérés par la DINSIC, qui permettront le développement d’échange d’informations entre administrations**.
 
 ## Eligibilité
 
-Vous êtes une administrations de l’Etat, une collectivité territoriale, un établissement public administratif, un organisme ou une personne de droit public ou de droit privé chargé d’une mission de service public administratif (parmis lesquels figurent les organismes de sécurité sociale) ? 
+Vous êtes une administration de l’Etat, une collectivité territoriale, un établissement public administratif, un organisme ou une personne de droit public ou de droit privé chargé d’une mission de service public administratif (parmi lesquels figurent les organismes de sécurité sociale) ? 
 
 La DINSIC vous met à disposition ses outils et son expertise afin de vous accompagner dans la fluidification de la circulation des données au service du pilotage de vos politiques publiques !
 
@@ -36,18 +36,18 @@ Le quotient familial municipal sert à obtenir des réducations sur le prix des 
 
 ### Signup
 
-La DINSIC met en œuvre un outil interministériel centralisé de contractualisation entre fournisseurs de services et de données (Signup)
+La DINSIC met en œuvre un outil interministériel centralisé de contractualisation entre fournisseurs de services (consommateur d'API) et fournisseur de données (producteur d'api), c'est l'outil *signup.api.gouv.fr*.
 
 **Pour les fournisseurs de service :**
 
-* Gère les demande d’accès à plusieurs API
+* Gère les demandes d’accès à une ou plusieurs API
 * Permet de sélectionner les périmètres de données (scope) dans chaque API
-* Permet à plusieurs comptes d’accéder aux abonnements
+* Permet à plusieurs comptes d’accéder aux abonnements d'un fournisseur de service. Ces comptes sont réunies dans une organisation (ie un SIRET)
 * Permet de gérer le renouvellement des autorisations (tokens) avec un seul compte
 * Donne accès à l’ensemble des contrats d’une organisation
-* Gère les demandes de tokens vers des api manager des ministères
+* Gère les demandes de tokens vers des api manager des producteurs d'API
 
-Le fournisseur de service (FS) doit demander une autorisation pour pouvoir être destinataire de données via les APIs. In fine, il sera destinataire de la clef de sécurité (token) utilisée dans le service en ligne ou le backoffice. Cette démarche, validée par l’ANSSI est dématérialisée à travers une interface (signup)
+Le fournisseur de service (FS) doit demander une autorisation pour pouvoir être destinataire de données via les API. In fine, il sera destinataire de la clef de sécurité (token) utilisée dans le service en ligne ou le backoffice. Cette démarche, validée par l’ANSSI, est dématérialisée à travers une interface (signup).
 
 Il sera demandé au fournisseur de service les informations suivantes :
 
@@ -66,8 +66,8 @@ Il sera demandé au fournisseur de service les informations suivantes :
 **Pour les fournisseurs de données :**
 
 * Instruction juridique et technique des demandes d’accès aux API pour le compte des ministères. 
-* Automatisation de la délivrance des tokens grâce par interaction avec l’API management des ministères
-* Contrôle à chaque appel de la validité du contrat
+* Automatisation de la délivrance des tokens avec interaction vers l’API management des ministères
+* Peut contrôler à chaque appel la validité du contrat
 
 **Le formulaire proposé est un socle minimal et peut être adapté aux besoins spécifiques de chaque ministère.**
 
@@ -123,19 +123,19 @@ Il sera demandé au fournisseur de service les informations suivantes :
 * API Impôts Particuliers
 * API SIV (Système d'immatriculation des véhicules)
 * API France Connect
-* API CNAM
+* API Attestation de droits AMELI
 * API Justif'Adresse
 
 ### Partenaires
 
 ## Producteur de données
 
-### Faire connaitre son API publier mon api sur api.gouv.fr
+### Faire connaitre son API : publier mon api sur api.gouv.fr
 
-Ce catalogue d'APIs, facilite le décloisonnement des données détenues par l’administration, afin de dynamiser le développement et l’évolution rapide de nouveaux services publics. Des services développés par les administrations et par tous les innovateurs susceptibles d’utiliser cette nouvelle ressource.
+Ce catalogue d'API facilite le décloisonnement des données détenues par l’administration, afin de dynamiser le développement et l’évolution rapide de nouveaux services publics. Il permet de créer des services développés par les administrations et par tous les innovateurs susceptibles d’utiliser cette nouvelle ressource.
 
-Les administrations déclarent elles-mêmes leurs APIs, pour peu qu’elles respectent un ensemble simple de conditions :
-* disposer d’une description fonctionnelle claire et succincte de l'API à renseigner sur API.GOUV,
+Les administrations déclarent elles-mêmes leurs API, pour peu qu’elles respectent un ensemble simple de conditions :
+* disposer d’une description fonctionnelle claire et succincte de l'API à renseigner sur api.gouv.fr,
 * proposer une documentation technique en ligne et claire,
 * décrire une procédure en ligne pour demander l'accès à l'API si elle n'est pas totalement ouverte.
 
@@ -143,19 +143,20 @@ Principal critère d'acceptation de l’API : celle-ci doit pouvoir être testé
 
 Au delà des conditions exposées ci dessus, api.gouv.fr encourage un ensemble de bonnes pratiques. Comme celle de produire une documentation au format OPEN API, de fournir des exemples de services utilisant leurs API ou encore de proposer une page de statistiques démontrant la facilité d'utilisation pour l'API concernée : nombre de hits, mais surtout mesures sectorielles comme le nombre de candidatures simplifiées aux marchés publics (API Entreprise).
 
-Les producteur d’API sont également invités à décrire simplement les modalités d'accès à leur API (CGU, licence..) et à simplifier au maximum l'enrôlement.
+Les producteur d’API sont également invités à décrire simplement les conditions d'accès à leur API (CGU, licence..) et à simplifier au maximum l'enrôlement.
 
 Les fournisseurs d’API sont responsables de l’exposition de leurs ressources. Ils définissent les conditions d’utilisation que devront respecter les consommateurs d’API. Les fournisseurs d’API référencés sur api.gouv.fr sont tous issus de la sphère publique : l’État ou ses représentants, collectivités, autorités administratives…
 
 Les consommateurs d’API quant à eux prennent contact avec les fournisseurs pour consommer leurs ressources. Les consommateurs sont issus de la sphère publique ou de la sphère privée (associations, startup, éditeurs, entreprises, etc.). Dans le cas des API ouvertes, sans conditions, il n’est pas nécessaire de contacter le fournisseur avant de consommer les ressources.
+
 ### Accompagnement à la mise à disposition des données
 #### Construire une API
 
 #### Intégrer une API dans un bouquet de service de la DINSIC
 
-#### APIm
+#### APIM
 
-#### Je souhaite exposer les données m'ai ne dispose pas des moyens techniques
+#### Je souhaite exposer les données mais ne dispose pas de moyens techniques
 
 ### Signup
 
