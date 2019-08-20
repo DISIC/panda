@@ -80,6 +80,13 @@ Pour plus d'information, merci de nous écrire à l'adresse suivante: contact@pa
 
 ##### Cas d'usage
 
+Template:
+- titre incitatif
+- Administration
+- Données
+- API Utilisée
+- Bénéfices
+
 ###### Cas d'usage 1 : Demande de bourse des collèges
 
 En 2018, toutes les demandes des bourses au collège ont été dématérialisées grâce à API Particulier. Les revenus de la famille ont été directement récupérés au niveau des centres des impôts. En septembre 2018, nous avons eu 650 000 appels réussis ce qui correspond à autant de justificatifs qui onnt été évités. C’est à nouveau un gain de temps pour les familles. Certains parents devaient prendre une demi journée de RTT pour déposer leur dossier, d’autres demander à leurs enfants de faire la queue pendant la récréation….
@@ -91,7 +98,7 @@ Le quotient familial municipal sert à obtenir des réducations sur le prix des 
 ##### Données délivrées
 ###### Données impots
 ###### Données Caf
-##### Comment effectuer une demande d'accès
+##### Comment demander l'accès aux données qui vous intéresse ?
 
 La DINSIC met en œuvre un outil interministériel centralisé de contractualisation entre fournisseurs de services et de données (Signup)
 
@@ -120,7 +127,7 @@ Le fournisseur de service (FS) doit demander une autorisation pour pouvoir être
 
 **Le formulaire proposé est un socle minimal et peut être adapté aux besoins spécifiques de chaque ministère.**
 
-###### Vers des APIs France Connectées
+###### Vers des APIs France Connectées (à repositionner)
 
 Les API sont utilisables par les administrations dans le cadre d’un service en ligne à destination des particuliers selon deux méthodes correspondant à des besoins différents :
 
