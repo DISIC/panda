@@ -4,7 +4,7 @@
 
 Née de l’ouverture des données publiques, dès 2011, les administrations ont commencé à publier des données publiques dans des formats librement réutilisables sur la plateforme www.data.gouv.fr afin de permettre à des tiers (public/ privé) de les exploiter. Depuis, la DINSIC a développé plusieurs plateformes permettant de fluidifier la circulation des données publiques et à accès restreint.
 
-Pensée initialement comme un vecteur de transparence, l'ouverture des données publique, en tant que politique publique, a notamment permis à de nombreuses administrations d’avoir accès aux données d’autres administrations. L’ouverture des données a ainsi été un catalyseur permettant une réelle prise de conscience quant à la nécessité de faire circuler les données.
+Pensée initialement comme un vecteur de transparence, la politique publique d'ouverture des données a notamment permis à de nombreuses administrations d’avoir accès aux données d’autres administrations. L’ouverture des données a ainsi été un catalyseur permettant une réelle prise de conscience quant à la nécessité de faire circuler les données.
 
 D'autres données ne sont pas des données publiques, elles sont confidentielles et peuvent concerner les particuliers ou les personnes morales. Ces donnés ne sont délivrées qu'aux administrations légitimes.
 
