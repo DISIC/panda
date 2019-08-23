@@ -6,7 +6,7 @@ Née de l’ouverture des données publiques, dès 2011, les administrations ont
 
 Pensée initialement comme un vecteur de transparence, la politique publique d'ouverture des données a notamment permis à de nombreuses administrations d’avoir accès aux données d’autres administrations. L’ouverture des données a ainsi été un catalyseur permettant une réelle prise de conscience quant à la nécessité de faire circuler les données.
 
-D'autres données ne sont pas des données publiques, elles sont confidentielles et peuvent concerner les particuliers ou les personnes morales. Ces donnés ne sont délivrées qu'aux administrations légitimes.
+D'autres données ne sont pas des données publiques, elles sont confidentielles et peuvent concerner les particuliers ou les personnes morales. Ces données ne sont délivrées qu'aux administrations légitimes.
 
 L'accès à ces données nécessite donc une autorisation qui est étudiée au regard de la réglementation en vigueur.
 Dans le cadre de la mise en œuvre du programme Dites-le nous une fois piloté par la DINSIC, des plateformes et des outils ont été développés afin de simplifier les démarches administratives en agissant sur la suppression des pièces justificatives qui émanent des administrations.
