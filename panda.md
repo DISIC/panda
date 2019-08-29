@@ -1,6 +1,4 @@
-# Structure du site PANDA
-
-## Introduction
+# Introduction
 
 Née de l’ouverture des données publiques, dès 2011, les administrations ont commencé à publier des données publiques dans des formats librement réutilisables sur la plateforme www.data.gouv.fr afin de permettre à des tiers (public/ privé) de les exploiter. Depuis, la DINSIC a développé plusieurs plateformes permettant de fluidifier la circulation des données publiques et à accès restreint.
 
@@ -15,9 +13,9 @@ L’administration sera tenue d’informer l’usager sur ces échanges en lui i
 
 **Pour organiser l’ensemble de ces échanges d’informations, les administrations pourront s’appuyer sur une offre de service et de produits, opérés par la DINSIC, qui permettront le développement d’échange d’informations entre administrations**.
 
-## Vous souhaitez accéder à des données
-### Catalogue de données
-#### API Particulier
+# Vous souhaitez accéder à des données
+## Catalogue de données
+### API Particulier
 
 **Informations issues de la Direction Générales des Finances Publiques (DGFIP):**
 
@@ -42,7 +40,7 @@ L’administration sera tenue d’informer l’usager sur ces échanges en lui i
 * Valeur du quotient familial
 * Année et mois du quotient familial
 
-#### API Entreprise
+### API Entreprise
 
 * Association
 * Document association
@@ -63,7 +61,7 @@ L’administration sera tenue d’informer l’usager sur ces échanges en lui i
 * Certificat PROBTP
 * Certificat Qualibat
 
-#### API France Connectées
+### API France Connectées
 
 * API Impôts Particuliers
 * API SIV (Système d'immatriculation des véhicules)
@@ -71,18 +69,16 @@ L’administration sera tenue d’informer l’usager sur ces échanges en lui i
 * API Attestation de droits AMELI
 * API Justif'Adresse
 
-### Exemple de démarche
-
-#### Demande de bourse des collèges
+## Exemple de démarche : demande de bourse des collèges
 
 En 2018, toutes les demandes des bourses au collège ont été dématérialisées grâce à API Particulier. Les revenus de la famille ont été directement récupérés au niveau des centres des impôts. En septembre 2018, nous avons eu 650 000 appels réussis ce qui correspond à autant de justificatifs qui onnt été évités. C’est à nouveau un gain de temps pour les familles. Certains parents devaient prendre une demi journée de RTT pour déposer leur dossier, d’autres demander à leurs enfants de faire la queue pendant la récréation….
 
-#### Incription aux activités périscolaires de la ville de la Lyon
+### Incription aux activités périscolaires de la ville de la Lyon
 
 Le quotient familial municipal sert à obtenir des réducations sur le prix des repas de la cantine scolaire dans les écoles publiques ou privées, sur les tarifs des activités périscolaires (les accueils du soir) et extrascolaires (ateliers du mercredi). Il est déterminé en fonction des revenus et de la composition de la famille.
 
 
-### Conventionner via l'outil _signup_
+## Conventionner via l'outil _signup_
 
 La DINSIC met en œuvre un outil interministériel centralisé de contractualisation entre fournisseurs de services (consommateur d'API) et fournisseur de données (producteur d'api), c'est l'outil *signup.api.gouv.fr*.
 
@@ -119,10 +115,10 @@ Il sera demandé au fournisseur de service les informations suivantes :
 
 **Le formulaire proposé est un socle minimal et peut être adapté aux besoins spécifiques de chaque ministère.**
 
-### Partenaires
+## Partenaires
 
-## Vous souhaitez mettre des données à disposition
-### Faire connaître son API : publier mon api sur api.gouv.fr
+# Vous souhaitez mettre des données à disposition
+## Faire connaître son API : publier mon api sur api.gouv.fr
 
 Ce catalogue d'API facilite le décloisonnement des données détenues par l’administration, afin de dynamiser le développement et l’évolution rapide de nouveaux services publics. Il permet de créer des services développés par les administrations et par tous les innovateurs susceptibles d’utiliser cette nouvelle ressource.
 
@@ -141,18 +137,18 @@ Les fournisseurs d’API sont responsables de l’exposition de leurs ressources
 
 Les consommateurs d’API quant à eux prennent contact avec les fournisseurs pour consommer leurs ressources. Les consommateurs sont issus de la sphère publique ou de la sphère privée (associations, startup, éditeurs, entreprises, etc.). Dans le cas des API ouvertes, sans conditions, il n’est pas nécessaire de contacter le fournisseur avant de consommer les ressources.
 
-### Accompagnement à la mise à disposition des données
-#### Construire une API
+## Accompagnement à la mise à disposition des données
+### Construire une API
 
-#### Intégrer une API dans un bouquet de service de la DINSIC
+### Intégrer une API dans un bouquet de service de la DINSIC
 
-#### APIM
+### APIM
 
-#### Je souhaite exposer les données mais ne dispose pas de moyens techniques
+### Je souhaite exposer les données mais ne dispose pas de moyens techniques
 
-### Signup
+## Signup
 
-## Base juridique
+# Base juridique
 
 Simplifier les formalités administratives des Français. C’est la promesse de la « loi pour un État au service d’une société de confiance » qui comporte 2 piliers : faire confiance et faire simple et s’adresse à tous les usagers - particuliers ou entreprises - dans leurs relations quotidiennes avec les administrations.
 
@@ -162,7 +158,7 @@ Publié le 18 janvier 2019, le décret « relatif aux échanges d’informations
 
 [Consultez le décret n° 2019-33 du 18 janvier 2019 fixant la liste des pièces justificatives que le public n’est plus tenu de produire](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000038029642&dateTexte=&categorieLien=id)
 
-### Développer les échanges de données entre administrations
+## Développer les échanges de données entre administrations
 
 [Afin de simplifier les échanges entree administrations, le décret n° 2019-31 liste d'une part les domaines et les procédures concernées et d'autre part les informations et les administrations chargées de mettre à disposition ces informations.](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000038029589&dateTexte=&categorieLien=id)
 
@@ -190,7 +186,7 @@ L’administration sera tenue d’informer l’usager sur ces échanges en lui i
 
 Pour organiser l’ensemble de ces échanges d’informations, les administrations pourront s’appuyer sur une offre de service et de produits, opérés par la DINSIC, qui permettront le développement d’échange d’informations entre administrations.
 
-### Réduire le nombre d’informations et de pièces justificatives demandées aux usagers
+## Réduire le nombre d’informations et de pièces justificatives demandées aux usagers
 
 [Le décret n° 2019-33 fixe quant à lui la « liste des pièces justificatives que le public n’est plus tenu de produire à l’appui des procédures administratives »](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000038029642&dateTexte=&categorieLien=id) dès lors que les échanges organisés par le premier décret sont effectifs. 
 
@@ -209,10 +205,3 @@ Les particuliers, quant à eux n’auront plus à fournir à l’appui de leurs 
 * l’avis d’imposition à l’impôt sur le revenu,
 * l’attestation de droit délivrée par les organismes de sécurité sociale
 * un justificatif d’identité, lorsqu’il est fait usage du dispositif « FranceConnect » mis en œuvre par la DINSIC.
-
-
-
-
-
-
-
