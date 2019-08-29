@@ -1,11 +1,5 @@
 # Structure du site PANDA
 
-## Suis-je concerné ?
-
-Vous êtes une administration de l’Etat, une collectivité territoriale, un établissement public administratif, un organisme ou une personne de droit public ou de droit privé chargé d’une mission de service public administratif (parmi lesquels figurent les organismes de sécurité sociale) ? 
-
-La DINSIC vous met à disposition ses outils et son expertise afin de vous accompagner dans la fluidification de la circulation des données au service du pilotage de vos politiques publiques !
-
 ## Introduction
 
 Née de l’ouverture des données publiques, dès 2011, les administrations ont commencé à publier des données publiques dans des formats librement réutilisables sur la plateforme www.data.gouv.fr afin de permettre à des tiers (public/ privé) de les exploiter. Depuis, la DINSIC a développé plusieurs plateformes permettant de fluidifier la circulation des données publiques et à accès restreint.
