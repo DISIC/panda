@@ -15,7 +15,18 @@ L’administration sera tenue d’informer l’usager sur ces échanges en lui i
 
 # Vous souhaitez accéder à des données
 ## Catalogue de données
+### Les données publiques disponibles sur data.gouv.fr
+
+La DINSIC à travers Etalab développe et anime la plateforme d’open data www.data.gouv.fr destinée à rassembler et à mettre à disposition librement l’ensemble des informations publiques de l’Etat, de ses établissements publics et, si elles le souhaitent, des collectivités territoriales et des personnes de droit public ou de droit privé chargées d’une mission de service public.
+
+Elle coordonne par ailleurs [le Service Public de la Donnée](https://www.data.gouv.fr/fr/reference) créé par l’Article 14 de la loi pour une République numérique, qui vise à mettre à disposition, en vue de faciliter leur réutilisation, les jeux de données de référence qui présentent le plus fort impact économique et social. Il s’adresse principalement aux entreprises et aux administrations pour qui la disponibilité d’une donnée de qualité est critique. Les producteurs et les diffuseurs prennent des engagements auprès de ces utilisateurs. La mission Etalab est chargée de la mise en oeuvre et de la gouvernance de ce nouveau service public.
+
 ### API Particulier
+
+API Particulier est héritier du principe de « Dites le nous une fois ». Il s’agit de ne pas avoir à apporter de justificatifs administratifs à l’administration. L’exemple typique, c’est le calcul du quotient familial en mairie. Pour cela, il faut le revenu fiscal de référence. Plutôt que de scanner mon avis d’imposition ou de l’imprimer, avec API Particulier, il suffit de transmettre son numéro fiscal et c’est tout. La mairie va demander directement l’information aux impôts. À Clamart déjà, le portail famille qui se base sur API Particulier permet de faire passer 80 % des demandes de calculs entièrement en ligne.
+
+Conformément aux dispositions de [l'article L114-8](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000031366350&idArticle=LEGIARTI000031367412&dateTexte=&categorieLien=cid) du code des relations entre le public et l'administration, seules les administrations sont habilitées à échanger entre elles des informations ou données strictement nécessaires pour traiter une démarche. 
+
 
 **Informations issues de la Direction Générales des Finances Publiques (DGFIP):**
 
