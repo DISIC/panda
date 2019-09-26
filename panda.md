@@ -19,14 +19,25 @@ L’administration sera tenue d’informer l’usager sur ces échanges en lui i
 
 La DINSIC à travers Etalab développe et anime la plateforme d’open data www.data.gouv.fr destinée à rassembler et à mettre à disposition librement l’ensemble des informations publiques de l’Etat, de ses établissements publics et, si elles le souhaitent, des collectivités territoriales et des personnes de droit public ou de droit privé chargées d’une mission de service public.
 
-Elle coordonne par ailleurs [le Service Public de la Donnée](https://www.data.gouv.fr/fr/reference) créé par l’Article 14 de la loi pour une République numérique, qui vise à mettre à disposition, en vue de faciliter leur réutilisation, les jeux de données de référence qui présentent le plus fort impact économique et social. Il s’adresse principalement aux entreprises et aux administrations pour qui la disponibilité d’une donnée de qualité est critique. Les producteurs et les diffuseurs prennent des engagements auprès de ces utilisateurs. La mission Etalab est chargée de la mise en oeuvre et de la gouvernance de ce nouveau service public.
+Afin de faciliter la découvrabilité et l'exploitation des données pour certains secteurs, nous avons développé différentes déclinaisons thématiques de la plateforme data.gouv.fr :
+- [transport.data.gouv.fr](https://transport.data.gouv.fr/)
+- [geo.data.gouv.fr](https://geo.data.gouv.fr/fr/) 
+- [adresse.data.gouv.fr](https://adresse.data.gouv.fr/)
+- [cadastre.data.gouv.fr](https://cadastre.data.gouv.fr/)
+- [entreprise.data.gouv.fr](https://entreprise.data.gouv.fr/)
 
-### API Particulier
+Au sein de la DINSIC, Etalab coordonne par ailleurs [le Service Public de la Donnée](https://www.data.gouv.fr/fr/reference) créé par l’Article 14 de la loi pour une République numérique, qui vise à mettre à disposition, en vue de faciliter leur réutilisation, les jeux de données de référence qui présentent le plus fort impact économique et social. Il s’adresse principalement aux entreprises et aux administrations pour qui la disponibilité d’une donnée de qualité est critique. Les producteurs et les diffuseurs prennent des engagements auprès de ces utilisateurs. La mission Etalab est chargée de la mise en oeuvre et de la gouvernance de ce nouveau service public.
 
-API Particulier est héritier du principe de « Dites le nous une fois ». Il s’agit de ne pas avoir à apporter de justificatifs administratifs à l’administration. L’exemple typique, c’est le calcul du quotient familial en mairie. Pour cela, il faut le revenu fiscal de référence. Plutôt que de scanner mon avis d’imposition ou de l’imprimer, avec API Particulier, il suffit de transmettre son numéro fiscal et c’est tout. La mairie va demander directement l’information aux impôts. À Clamart déjà, le portail famille qui se base sur API Particulier permet de faire passer 80 % des demandes de calculs entièrement en ligne.
+
+### Les données disponibles pour les administrations habilitées
 
 Conformément aux dispositions de [l'article L114-8](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000031366350&idArticle=LEGIARTI000031367412&dateTexte=&categorieLien=cid) du code des relations entre le public et l'administration, seules les administrations sont habilitées à échanger entre elles des informations ou données strictement nécessaires pour traiter une démarche. 
 
+Un dispositif permettant de valider l'habilitation des administrations concernées, Signup est décrit plus bas.
+
+#### API Particulier
+
+API Particulier est héritier du principe de « Dites le nous une fois ». Il s’agit de ne pas avoir à apporter de justificatifs administratifs à l’administration. L’exemple typique, c’est le calcul du quotient familial en mairie. Pour cela, il faut le revenu fiscal de référence. Plutôt que de scanner mon avis d’imposition ou de l’imprimer, avec API Particulier, il suffit de transmettre son numéro fiscal et c’est tout. La mairie va demander directement l’information aux impôts. À Clamart déjà, le portail famille qui se base sur API Particulier permet de faire passer 80 % des demandes de calculs entièrement en ligne.
 
 **Informations issues de la Direction Générales des Finances Publiques (DGFIP):**
 
@@ -51,17 +62,18 @@ Conformément aux dispositions de [l'article L114-8](https://www.legifrance.gouv
 * Valeur du quotient familial
 * Année et mois du quotient familial
 
-### API Entreprise
+#### API Entreprise
 
-* Association
-* Document association
+Les données disponibles via l'API entreprise sont les suivantes:
+* La liste des Associations
+* Document connus pour une association (les statuts - la liste des personnes habilitées à représenter l'association - la ou les délibérations pour modification ou dissolution de l'organnisme)
 * INSEE Entreprise
 * INSEE Etablissement
-* Bilans Entreprises BDF
-* Exercice
-* Extrait INPI
-* Extrait RCS
-* Liasse fiscale
+* Bilans Entreprises Banque de France (interrogation de la Banque de France sur les 3 derniers bilans qu'elle connaît d'une entreprise)
+* Exercice (chiffre d'affaire comptable des entreprises soumises à l'impot sur les sociétés et ayant transmis ses comptes annuels aux greffes)
+* Extrait INPI (les derniers brevets, modèles et marques d'une entreprise ainsi que le nombre d'entrées pour chacune de ces catégories enregistrées à l'INPI)
+* Extrait RCS (extrait des données présentes dans le Registre du commerce et des sociétés pour un numéro de siren donné)
+* Liasse fiscale (déclarations de liasses fiscales (restreintes aux formulaires disponibles) d'une entreprise pour une année donnée, .
 * Attestation Fiscale
 * Attestation Sociale
 * Attestation AGEFIPH
@@ -72,7 +84,7 @@ Conformément aux dispositions de [l'article L114-8](https://www.legifrance.gouv
 * Certificat PROBTP
 * Certificat Qualibat
 
-### API France Connectées
+#### API France Connectées
 
 * API Impôts Particuliers
 * API SIV (Système d'immatriculation des véhicules)
